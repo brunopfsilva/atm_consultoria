@@ -23,6 +23,7 @@ class _TelaClienteState extends State<TelaCliente> {
           child: SingleChildScrollView(child:
 
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -34,10 +35,17 @@ class _TelaClienteState extends State<TelaCliente> {
               ),
               Column(
 
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
 
                  Padding(padding: EdgeInsets.only(top: 16.0),child: 
-                   Image(image: AssetImage("images")),)
+                   Image(image: AssetImage("assets/images/cliente1.png")),
+                 ),
+                  Text("Empresa de software"),
+                  Padding(padding: EdgeInsets.only(top: 16.0),child:
+                  Image(image: AssetImage("assets/images/cliente2.png")),
+                  ),                  Text("Empresa de consultoria"),
+
 
                 ],)
 
