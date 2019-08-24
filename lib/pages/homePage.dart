@@ -1,4 +1,7 @@
+import 'package:atm_consultoria/pages/TelaCliente.dart';
+import 'package:atm_consultoria/pages/TelaContacto.dart';
 import 'package:atm_consultoria/pages/TelaEmpresa.dart';
+import 'package:atm_consultoria/pages/TelaServico.dart';
 import 'package:flutter/material.dart';
 
 class homepage extends StatefulWidget {
@@ -16,13 +19,13 @@ class _homepageState extends State<homepage> {
 
   }
   void _abrirServico() {  Navigator.push(context,
-      MaterialPageRoute(builder: (context)  => TelaEmpresa() )
+      MaterialPageRoute(builder: (context)  => TelaServico() )
   );
 
   }
   void _abrirCliente() {
     Navigator.push(context,
-        MaterialPageRoute(builder: (context)  => TelaEmpresa() )
+        MaterialPageRoute(builder: (context)  => TelaCliente() )
     );
 
   }
@@ -30,7 +33,7 @@ class _homepageState extends State<homepage> {
   void _abrirContacto() {
 
     Navigator.push(context,
-        MaterialPageRoute(builder: (context)  => TelaEmpresa() )
+        MaterialPageRoute(builder: (context)  => TelaContacto() )
     );
 
   }
